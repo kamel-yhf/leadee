@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
+  final Function(int) onChangedStep;
+
+  AuthScreen({Key key, this.onChangedStep}) : super(key: key);
   @override
   _AuthScreenState createState() => _AuthScreenState();
 }
@@ -100,6 +103,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             : () {
                                 if (_formKey.currentState.validate()) {
                                   print(_email);
+                                  widget.onChangedStep(1);
                                 }
                               },
                         child: Text(
