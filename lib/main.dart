@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:laedeetuto/screens/guest/Auth.dart';
 import 'package:laedeetuto/screens/guest/Password.dart';
-// import 'package:laedeetuto/screens/guest/Auth.dart';
-//import 'package:laedeetuto/screens/guest/Term.dart';
+import 'package:laedeetuto/screens/guest/Term.dart';
 
 void main() => runApp(App());
 
@@ -11,7 +11,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Leadee',
-      home: PasswordScreen(),
+      home: TermScreen(),
     );
   }
 }
